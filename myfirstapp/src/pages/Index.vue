@@ -1,14 +1,14 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-full.svg"
-    >
+    <img alt="Virtual FoxFest logo" src="https://virtualfoxfest.com/images/ZoomFoxSmall.png" />
   </q-page>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  mounted () {
+    this.$q.notify({ message: 'hello' })
+  }
 }
 </script>
