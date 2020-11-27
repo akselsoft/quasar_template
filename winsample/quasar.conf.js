@@ -100,7 +100,7 @@ module.exports = function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['Notify']
+      plugins: []
     },
 
     // animations: 'all', // --- includes all animations
@@ -117,8 +117,8 @@ module.exports = function (/* ctx */) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'Quasar Template App',
-        short_name: 'Quasar Template App',
+        name: 'Windows Sample',
+        short_name: 'Windows Sample',
         description: 'A Quasar Framework app',
         display: 'standalone',
         orientation: 'portrait',
@@ -169,7 +169,6 @@ module.exports = function (/* ctx */) {
       bundler: 'packager', // 'packager' or 'builder'
 
       packager: {
-        // platform: 'win32'
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
 
         // OS X / Mac App Store
@@ -185,7 +184,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'quasar_template'
+        appId: 'winsample'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration

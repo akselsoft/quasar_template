@@ -1,7 +1,6 @@
 <template>
   <q-page class="q-gutter-md q-ma-md">
-    <div class="text-h6">This is the customer page</div>Customer Name:
-    <input v-model="customername" />
+    <div class="text-h6">This is the customer page</div>
     <q-input flat label="Name" v-model="customername" />
     <q-checkbox label="Active" v-model="active" />
     <q-select v-model="option" :options="options" />

@@ -1,9 +1,9 @@
 {
-  "name": "quasar_template",
+  "name": "winsample",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar Template App",
-  "author": "Andrew MacNeill",
+  "productName": "Windows Sample",
+  "author": "Andrew MacNeill <PCH-MacNeillA@135gc.onmicrosoft.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
@@ -34,7 +34,6 @@
     "eslint-plugin-vue": "^6.1.2"
   },
   "browserslist": [
-    "ie >= 11",
     "last 10 Chrome versions",
     "last 10 Firefox versions",
     "last 4 Edge versions",

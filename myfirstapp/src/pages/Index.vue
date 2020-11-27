@@ -8,7 +8,7 @@
 export default {
   name: 'PageIndex',
   mounted () {
-    this.$q.notify({ message: 'hello' })
+    this.$q.notify({ message: 'hello', color: 'red', position: 'top' })
   }
 }
 </script>

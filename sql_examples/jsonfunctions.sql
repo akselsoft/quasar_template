@@ -1,4 +1,18 @@
 
+
+--- Getting a value from JSON
+SELECT JSON_Value(
+'{
+        "CustomerName": "Narwhal",
+        "Active": true,
+        "Location": "Canadaland",
+        "Country": {
+            "Id": 1,
+            "English": "Canada"
+        }
+    }','$."CustomerName"')
+
+--- Getting JSON from JSON
 SELECT JSON_QUERY(
 '{
         "CustomerName": "Narwhal",
@@ -11,18 +25,7 @@ SELECT JSON_QUERY(
     }','$."Country"')
 
 
-SELECT JSON_Value(
-'{
-        "CustomerName": "Narwhal",
-        "Active": true,
-        "Location": "Canadaland",
-        "Country": {
-            "Id": 1,
-            "English": "Canada"
-        }
-    }','$."CustomerName"')
-
-
+--- Getting JSON Value from JSON Query
 SELECT JSON_VALUE(JSON_QUERY(
 '{
         "CustomerName": "Narwhal",
